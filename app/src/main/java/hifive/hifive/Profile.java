@@ -6,16 +6,16 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
-public class MainActivity extends AppCompatActivity {
+public class Profile extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-    }
-    public void goToProfile(View view) {
-        Intent intent = new Intent(this, Profile.class);
-        startActivity(intent);
+        setContentView(R.layout.activity_profile);
     }
 
+    public void goToMain(View view) {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
 }
