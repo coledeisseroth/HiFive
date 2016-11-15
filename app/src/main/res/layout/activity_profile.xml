@@ -11,11 +11,20 @@
     tools:context="hifive.hifive.Profile">
 
     <Button
-        android:text="Button"
+        android:text="Main"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
         android:id="@+id/button2"
         android:onClick="goToMain" />
+
+    <Button
+        android:text="Interests"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/button3"
+        android:onClick="goToInterests" />
 </RelativeLayout>
