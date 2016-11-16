@@ -8,14 +8,32 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="hifive.hifive.Interests">
+    tools:context="hifive.hifive.Interests"
+    android:orientation="vertical">
+
+    <EditText android:id="@+id/interest_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/add_interest_field_hint"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
 
     <Button
-        android:text="Profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_interest_button_label"
+        android:layout_marginRight="53dp"
+        android:id="@+id/button5"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="@string/profile_button_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
         android:id="@+id/button4"
         android:onClick="goToProfile"/>
+
 </RelativeLayout>
