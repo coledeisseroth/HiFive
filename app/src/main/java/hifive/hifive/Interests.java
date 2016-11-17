@@ -34,6 +34,7 @@ public class Interests extends AppCompatActivity {
         interestViews[4] = (TextView) findViewById(R.id.interest_4);
         interestViews[5] = (TextView) findViewById(R.id.interest_5);
         interestViews[6] = (TextView) findViewById(R.id.interest_6);
+        syncInterests();
     }
 
     public void goToProfile(View view) {
@@ -53,11 +54,11 @@ public class Interests extends AppCompatActivity {
         EditText editText = (EditText) findViewById(R.id.interest_input);
         String newInterest = editText.getText().toString();
         ((MyApplication) this.getApplication()).addInterest(newInterest);
-        syncInterests(view);
+        syncInterests();
     }
     public void removeInterest(View view, int index){
         ((MyApplication) this.getApplication()).removeInterest(index);
-        syncInterests(view);
+        syncInterests();
     }
     public int numInterests(){
         return ((MyApplication) this.getApplication()).getInterests().size();
@@ -65,7 +66,7 @@ public class Interests extends AppCompatActivity {
     public String getInterest(int index){
         return ((MyApplication) this.getApplication()).getInterests().get(index);
     }
-    public void syncInterests(View view){
+    public void syncInterests(){
         for(int i = 0; i < interestViews.length; i++){
             Button rib = removeInterestButtons[i];
             TextView iv = interestViews[i];
