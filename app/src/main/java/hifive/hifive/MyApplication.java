@@ -8,7 +8,7 @@ import java.util.ArrayList;
  * Created by karl on 11/15/16.
  */
 public class MyApplication extends Application {
-    private ArrayList<String> interests;
+    private ArrayList<String> interests = new ArrayList<String>();
     public ArrayList<String> getInterests(){
         return interests;
     }

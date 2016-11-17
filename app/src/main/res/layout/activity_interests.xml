@@ -16,16 +16,8 @@
         android:layout_height="wrap_content"
         android:hint="@string/add_interest_field_hint"
         android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/add_interest_button_label"
-        android:layout_marginRight="53dp"
-        android:id="@+id/button5"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/submit_interest"/>
 
     <Button
         android:text="@string/profile_button_label"
@@ -33,7 +25,157 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:id="@+id/button4"
+        android:id="@+id/interests_to_profile"
         android:onClick="goToProfile"/>
+
+    <Button
+        android:text="@string/remove_interest_button_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:id="@+id/remove_interest_0"
+        android:layout_below="@+id/interest_input"
+        android:layout_alignParentEnd="true"
+        android:onClick="removeInterest0"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_interest_button_label"
+        android:id="@+id/submit_interest"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:onClick="addInterest"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/remove_interest_0"
+        android:id="@+id/interest_0"
+        android:layout_alignBottom="@+id/remove_interest_0"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/interest_input"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:text="@string/default_interest_text" />
+
+    <Button
+        android:text="@string/remove_interest_button_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/remove_interest_0"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/remove_interest_1"
+        android:onClick="removeInterest1"/>
+
+    <Button
+        android:text="@string/remove_interest_button_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/remove_interest_1"
+        android:layout_alignStart="@+id/remove_interest_1"
+        android:id="@+id/remove_interest_2"
+        android:onClick="removeInterest2"/>
+
+    <Button
+        android:text="@string/remove_interest_button_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/remove_interest_3"
+        android:layout_below="@+id/remove_interest_2"
+        android:layout_alignParentEnd="true"
+        android:onClick="removeInterest3"/>
+
+    <Button
+        android:text="@string/remove_interest_button_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/remove_interest_3"
+        android:layout_alignStart="@+id/remove_interest_3"
+        android:id="@+id/remove_interest_4"
+        android:onClick="removeInterest4"/>
+
+    <Button
+        android:text="@string/remove_interest_button_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/remove_interest_4"
+        android:layout_alignStart="@+id/remove_interest_4"
+        android:id="@+id/remove_interest_5"
+        android:onClick="removeInterest5"/>
+
+    <Button
+        android:text="@string/remove_interest_button_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/remove_interest_5"
+        android:layout_alignStart="@+id/remove_interest_5"
+        android:id="@+id/remove_interest_6"
+        android:onClick="removeInterest6"/>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/interest_0"
+        android:layout_alignParentStart="true"
+        android:id="@+id/interest_1"
+        android:layout_above="@+id/remove_interest_2"
+        android:layout_toStartOf="@+id/remove_interest_0"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/interest_1"
+        android:layout_alignParentStart="true"
+        android:id="@+id/interest_2"
+        android:layout_above="@+id/remove_interest_3"
+        android:layout_toStartOf="@+id/remove_interest_1"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/interest_2"
+        android:layout_alignParentStart="true"
+        android:id="@+id/interest_3"
+        android:layout_above="@+id/remove_interest_4"
+        android:layout_toStartOf="@+id/remove_interest_2"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/interest_3"
+        android:layout_alignParentStart="true"
+        android:id="@+id/interest_4"
+        android:layout_above="@+id/remove_interest_5"
+        android:layout_toStartOf="@+id/remove_interest_3"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/interest_4"
+        android:layout_alignParentStart="true"
+        android:id="@+id/interest_5"
+        android:layout_above="@+id/remove_interest_6"
+        android:layout_toStartOf="@+id/remove_interest_4"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/interest_5"
+        android:layout_alignParentStart="true"
+        android:id="@+id/interest_6"
+        android:layout_alignBottom="@+id/remove_interest_6"
+        android:layout_toStartOf="@+id/remove_interest_5"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
 
 </RelativeLayout>

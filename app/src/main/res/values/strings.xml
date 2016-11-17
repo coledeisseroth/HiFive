@@ -2,5 +2,7 @@
     <string name="app_name">HiFive</string>
     <string name="profile_button_label">Profile</string>
     <string name="add_interest_button_label">Enter</string>
-    <string name="add_interest_field_hint">Type an interest here...</string>
+    <string name="add_interest_field_hint">Type an interest here.</string>
+    <string name="remove_interest_button_label">Remove</string>
+    <string name="default_interest_text">--</string>
 </resources>
