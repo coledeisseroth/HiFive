@@ -53,6 +53,7 @@ public class Interests extends AppCompatActivity {
         if(numInterests() > 6){return;}
         EditText editText = (EditText) findViewById(R.id.interest_input);
         String newInterest = editText.getText().toString();
+        if(newInterest.length() < 1){return;}
         ((MyApplication) this.getApplication()).addInterest(newInterest);
         syncInterests();
     }

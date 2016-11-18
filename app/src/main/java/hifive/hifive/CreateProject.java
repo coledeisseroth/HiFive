@@ -28,26 +28,48 @@ public class CreateProject extends AppCompatActivity {
         projectInterestViews[2] = (TextView) findViewById(R.id.project_interest_2);
         projectInterestViews[3] = (TextView) findViewById(R.id.project_interest_3);
         projectInterestViews[4] = (TextView) findViewById(R.id.project_interest_4);
+        syncProjectInfo();
         syncProjectInterests();
     }
     public void goToMain(View view){
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
+        updateProjectInfo();
     }
-    public void removeProjectInterest0(View view){removeProjectInterest(view, 0);}
-    public void removeProjectInterest1(View view){removeProjectInterest(view, 1);}
-    public void removeProjectInterest2(View view){removeProjectInterest(view, 2);}
-    public void removeProjectInterest3(View view){removeProjectInterest(view, 3);}
-    public void removeProjectInterest4(View view){removeProjectInterest(view, 4);}
+    public void goToSetLocation(View view){
+        updateProjectInfo();
+    }
+    public void updateProjectInfo(){
+        EditText titleInput = (EditText) findViewById(R.id.title_input);
+        String title = titleInput.getText().toString();
+        ((MyApplication) this.getApplication()).setProjectTitle(title);
+        EditText descriptionInput = (EditText) findViewById(R.id.description_input);
+        String description = descriptionInput.getText().toString();
+        ((MyApplication) this.getApplication()).setProjectDescription(description);
+    }
+    public void syncProjectInfo(){
+        EditText titleInput = (EditText) findViewById(R.id.title_input);
+        String title = ((MyApplication) this.getApplication()).getProjectTitle();
+        titleInput.setText(title);
+        EditText descriptionInput = (EditText) findViewById(R.id.description_input);
+        String description = ((MyApplication) this.getApplication()).getProjectDescription();
+        descriptionInput.setText(description);
+    }
+    public void removeProjectInterest0(View view){removeProjectInterest(0);}
+    public void removeProjectInterest1(View view){removeProjectInterest(1);}
+    public void removeProjectInterest2(View view){removeProjectInterest(2);}
+    public void removeProjectInterest3(View view){removeProjectInterest(3);}
+    public void removeProjectInterest4(View view){removeProjectInterest(4);}
 
     public void addProjectInterest(View view) {
         if(numProjectInterests() > 4){return;}
         EditText editText = (EditText) findViewById(R.id.project_interest_input);
         String newProjectInterest = editText.getText().toString();
+        if(newProjectInterest.length() < 1){return;}
         ((MyApplication) this.getApplication()).addProjectInterest(newProjectInterest);
         syncProjectInterests();
     }
-    public void removeProjectInterest(View view, int index){
+    public void removeProjectInterest(int index){
         ((MyApplication) this.getApplication()).removeProjectInterest(index);
         syncProjectInterests();
     }

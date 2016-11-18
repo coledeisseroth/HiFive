@@ -70,11 +70,12 @@
         android:layout_below="@+id/desription_label"
         android:layout_alignParentStart="true"
         android:id="@+id/project_interests_label"
-        android:layout_alignBottom="@+id/project_interest_input"
-        android:layout_toStartOf="@+id/description_input" />
+        android:layout_toStartOf="@+id/description_input"
+        android:layout_above="@+id/project_interest_1"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
 
     <Button
-        android:text="Button"
+        android:text="@string/confirm_start_project_button_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -89,7 +90,8 @@
         android:layout_toEndOf="@+id/project_interest_input"
         android:id="@+id/submit_project_interest_button"
         android:layout_alignBottom="@+id/project_interest_input"
-        android:layout_alignStart="@+id/continue_button" />
+        android:layout_alignStart="@+id/continue_button"
+        android:onClick="addProjectInterest"/>
 
     <EditText
         android:layout_width="wrap_content"
@@ -107,7 +109,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/submit_project_interest_button"
         android:layout_alignStart="@+id/submit_project_interest_button"
-        android:id="@+id/remove_project_interest_button_0" />
+        android:id="@+id/remove_project_interest_button_0"
+        android:onClick="removeProjectInterest0"/>
 
     <Button
         android:text="@string/remove_interest_button_label"
@@ -115,7 +118,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/remove_project_interest_button_1"
         android:layout_below="@+id/remove_project_interest_button_0"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:onClick="removeProjectInterest1"/>
 
     <Button
         android:text="@string/remove_interest_button_label"
@@ -123,7 +127,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/remove_project_interest_button_1"
         android:layout_alignStart="@+id/remove_project_interest_button_1"
-        android:id="@+id/remove_project_interest_button_2" />
+        android:id="@+id/remove_project_interest_button_2"
+        android:onClick="removeProjectInterest2"/>
 
     <Button
         android:text="@string/remove_interest_button_label"
@@ -131,7 +136,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/remove_project_interest_button_2"
         android:layout_alignStart="@+id/remove_project_interest_button_2"
-        android:id="@+id/remove_project_interest_button_3" />
+        android:id="@+id/remove_project_interest_button_3"
+        android:onClick="removeProjectInterest3"/>
 
     <Button
         android:text="@string/remove_interest_button_label"
@@ -139,7 +145,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/remove_project_interest_button_4"
         android:layout_below="@+id/remove_project_interest_button_3"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:onClick="removeProjectInterest4"/>
 
     <TextView
         android:text="TextView"

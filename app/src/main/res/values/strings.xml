@@ -3,11 +3,12 @@
     <string name="start_project_button_label">Start a project</string>
     <string name="find_project_button_label">Find a project</string>
     <string name="cancel_start_project_button_label">Cancel</string>
+    <string name="confirm_start_project_button_label">Continue</string>
     <string name="project_title_label">Title</string>
     <string name="project_title_hint">e.g. The Burrito Game</string>
     <string name="project_description_label">Description</string>
     <string name="project_description_hint">e.g. We take turns wrapping one another up in giant tortillas. The last one to spill out wins.</string>
-    <string name="project_interest_label">Relevant interests</string>
+    <string name="project_interest_label">Relevant interests (max. 5)</string>
     <string name="project_interest_hint">e.g. Food games</string>
     <string name="profile_button_label">Profile</string>
     <string name="add_interest_button_label">Enter</string>

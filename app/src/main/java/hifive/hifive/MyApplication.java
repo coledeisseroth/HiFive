@@ -22,4 +22,10 @@ public class MyApplication extends Application {
     public ArrayList<String> getProjectInterests(){ return projectInterests;}
     public void addProjectInterest(String newInterest) {projectInterests.add(newInterest);}
     public void removeProjectInterest(int index) { projectInterests.remove(index);}
+    private String projectTitle = "";
+    public String getProjectTitle(){return projectTitle;}
+    public void setProjectTitle(String newTitle){projectTitle = newTitle;}
+    private String projectDescription = "";
+    public String getProjectDescription(){return projectDescription;}
+    public void setProjectDescription(String newDescription){projectDescription = newDescription;}
 }
