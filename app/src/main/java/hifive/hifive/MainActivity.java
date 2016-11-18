@@ -17,5 +17,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, Profile.class);
         startActivity(intent);
     }
+    public void goToCreateProject(View view){
+        Intent intent = new Intent(this, CreateProject.class);
+        startActivity(intent);
+    }
 
 }

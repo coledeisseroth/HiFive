@@ -18,4 +18,8 @@ public class MyApplication extends Application {
     public void removeInterest(int index){
         interests.remove(index);
     }
+    private ArrayList<String> projectInterests = new ArrayList<String>();
+    public ArrayList<String> getProjectInterests(){ return projectInterests;}
+    public void addProjectInterest(String newInterest) {projectInterests.add(newInterest);}
+    public void removeProjectInterest(int index) { projectInterests.remove(index);}
 }

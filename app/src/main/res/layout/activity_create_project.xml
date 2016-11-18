@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_create_project"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="hifive.hifive.CreateProject">
+
+    <Button
+        android:text="@string/cancel_start_project_button_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:onClick="goToMain"
+        android:id="@+id/cancel_button" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/title_input"
+        android:hint="@string/project_title_hint"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/cancel_button" />
+
+    <TextView
+        android:text="@string/project_title_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/title_label"
+        android:layout_alignBottom="@+id/title_input"
+        android:layout_toStartOf="@+id/title_input"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:layout_alignEnd="@+id/cancel_button" />
+
+    <TextView
+        android:text="@string/project_description_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_label"
+        android:layout_alignParentStart="true"
+        android:id="@+id/desription_label"
+        android:layout_alignBottom="@+id/description_input"
+        android:layout_toStartOf="@+id/title_input" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:inputType="textMultiLine"
+        android:hint="@string/project_description_hint"
+        android:ems="10"
+        android:id="@+id/description_input"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_input"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/title_label" />
+
+    <TextView
+        android:text="@string/project_interest_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/desription_label"
+        android:layout_alignParentStart="true"
+        android:id="@+id/project_interests_label"
+        android:layout_alignBottom="@+id/project_interest_input"
+        android:layout_toStartOf="@+id/description_input" />
+
+    <Button
+        android:text="Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/continue_button" />
+
+    <Button
+        android:text="@string/add_interest_button_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/description_input"
+        android:layout_toEndOf="@+id/project_interest_input"
+        android:id="@+id/submit_project_interest_button"
+        android:layout_alignBottom="@+id/project_interest_input"
+        android:layout_alignStart="@+id/continue_button" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/project_interest_hint"
+        android:ems="10"
+        android:id="@+id/project_interest_input"
+        android:layout_below="@+id/desription_label"
+        android:layout_toEndOf="@+id/desription_label" />
+
+    <Button
+        android:text="@string/remove_interest_button_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/submit_project_interest_button"
+        android:layout_alignStart="@+id/submit_project_interest_button"
+        android:id="@+id/remove_project_interest_button_0" />
+
+    <Button
+        android:text="@string/remove_interest_button_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/remove_project_interest_button_1"
+        android:layout_below="@+id/remove_project_interest_button_0"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="@string/remove_interest_button_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/remove_project_interest_button_1"
+        android:layout_alignStart="@+id/remove_project_interest_button_1"
+        android:id="@+id/remove_project_interest_button_2" />
+
+    <Button
+        android:text="@string/remove_interest_button_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/remove_project_interest_button_2"
+        android:layout_alignStart="@+id/remove_project_interest_button_2"
+        android:id="@+id/remove_project_interest_button_3" />
+
+    <Button
+        android:text="@string/remove_interest_button_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/remove_project_interest_button_4"
+        android:layout_below="@+id/remove_project_interest_button_3"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/project_interest_input"
+        android:id="@+id/project_interest_0"
+        android:layout_above="@+id/remove_project_interest_button_1"
+        android:layout_toEndOf="@+id/project_interests_label" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/project_interest_0"
+        android:id="@+id/project_interest_1"
+        android:layout_above="@+id/remove_project_interest_button_2"
+        android:layout_alignStart="@+id/project_interest_0" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/project_interest_1"
+        android:id="@+id/project_interest_2"
+        android:layout_above="@+id/remove_project_interest_button_3"
+        android:layout_alignStart="@+id/project_interest_1" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/project_interest_2"
+        android:layout_alignStart="@+id/project_interest_2"
+        android:id="@+id/project_interest_3"
+        android:layout_above="@+id/remove_project_interest_button_4" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/project_interest_3"
+        android:id="@+id/project_interest_4"
+        android:layout_alignBottom="@+id/remove_project_interest_button_4"
+        android:layout_alignEnd="@+id/project_interest_3" />
+
+
+</RelativeLayout>
