@@ -24,7 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/select_project_button_0"
-        android:onClick="goToProjectDescription"
+        android:onClick="goToProjectDescription0"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true" />
     <Button
@@ -32,7 +32,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/select_project_button_1"
-        android:onClick="goToProjectDescription"
+        android:onClick="goToProjectDescription1"
         android:layout_below="@+id/select_project_button_0"
         android:layout_alignParentEnd="true" />
 
@@ -40,7 +40,7 @@
         android:text="@string/select_project_button_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="goToProjectDescription"
+        android:onClick="goToProjectDescription3"
         android:id="@+id/select_project_button_3"
         android:layout_below="@+id/select_project_button_2"
         android:layout_alignParentEnd="true" />
@@ -50,7 +50,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/select_project_button_6"
-        android:onClick="goToProjectDescription"
+        android:onClick="goToProjectDescription6"
         android:layout_below="@+id/select_project_button_5"
         android:layout_alignStart="@+id/select_project_button_5" />
 
@@ -59,7 +59,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/select_project_button_4"
-        android:onClick="goToProjectDescription"
+        android:onClick="goToProjectDescription4"
         android:layout_below="@+id/select_project_button_3"
         android:layout_alignParentEnd="true" />
 
@@ -138,7 +138,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/select_project_button_2"
-        android:onClick="goToProjectDescription"
+        android:onClick="goToProjectDescription2"
         android:layout_below="@+id/select_project_button_1"
         android:layout_alignParentEnd="true" />
 
@@ -147,7 +147,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/select_project_button_5"
-        android:onClick="goToProjectDescription"
+        android:onClick="goToProjectDescription5"
         android:layout_below="@+id/select_project_button_4"
         android:layout_alignParentEnd="true" />
 

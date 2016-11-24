@@ -28,4 +28,10 @@ public class MyApplication extends Application {
     private String projectDescription = "";
     public String getProjectDescription(){return projectDescription;}
     public void setProjectDescription(String newDescription){projectDescription = newDescription;}
+    private String activeProjectTitle = "";
+    public String getActiveProjectTitle(){return activeProjectTitle;}
+    public void setActiveProjectTitle(String newTitle){activeProjectTitle = newTitle;}
+    private String activeProjectDescription = "";
+    public String getActiveProjectDescription(){return activeProjectDescription;}
+    public void setActiveProjectDescription(String newDescription){activeProjectDescription = newDescription;}
 }
