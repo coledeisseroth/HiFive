@@ -80,7 +80,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
-        android:id="@+id/continue_button" />
+        android:id="@+id/continue_button"
+        android:onClick="goToSetLocation"/>
 
     <Button
         android:text="@string/add_interest_button_label"

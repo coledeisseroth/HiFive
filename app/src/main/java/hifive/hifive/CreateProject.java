@@ -38,6 +38,8 @@ public class CreateProject extends AppCompatActivity {
     }
     public void goToSetLocation(View view){
         updateProjectInfo();
+        Intent intent = new Intent(this, SetLocation.class);
+        startActivity(intent);
     }
     public void updateProjectInfo(){
         EditText titleInput = (EditText) findViewById(R.id.title_input);

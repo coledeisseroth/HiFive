@@ -41,7 +41,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/button5"
         android:layout_above="@+id/start_project_button"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:onClick="goToFindProject"/>
 
 
 </RelativeLayout>

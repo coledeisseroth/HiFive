@@ -26,7 +26,14 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <activity android:name=".CreateProject"></activity>
+        <activity android:name=".CreateProject" />
+        <activity android:name=".SetLocation" />
+        <activity android:name=".FindProject" />
+        <activity android:name=".ProjectDescription" />
+        <activity android:name=".JoinProject" />
+        <activity android:name=".ProjectInProgress" />
+        <activity android:name=".ProjectComplete" />
+        <activity android:name=".WaitForParticipants"></activity>
     </application>
 
 </manifest>

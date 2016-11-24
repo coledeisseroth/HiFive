@@ -41,13 +41,13 @@ public class Interests extends AppCompatActivity {
         Intent intent = new Intent(this, Profile.class);
         startActivity(intent);
     }
-    public void removeInterest0(View view){removeInterest(view, 0);}
-    public void removeInterest1(View view){removeInterest(view, 1);}
-    public void removeInterest2(View view){removeInterest(view, 2);}
-    public void removeInterest3(View view){removeInterest(view, 3);}
-    public void removeInterest4(View view){removeInterest(view, 4);}
-    public void removeInterest5(View view){removeInterest(view, 5);}
-    public void removeInterest6(View view){removeInterest(view, 6);}
+    public void removeInterest0(View view){removeInterest(0);}
+    public void removeInterest1(View view){removeInterest(1);}
+    public void removeInterest2(View view){removeInterest(2);}
+    public void removeInterest3(View view){removeInterest(3);}
+    public void removeInterest4(View view){removeInterest(4);}
+    public void removeInterest5(View view){removeInterest(5);}
+    public void removeInterest6(View view){removeInterest(6);}
 
     public void addInterest(View view) {
         if(numInterests() > 6){return;}
@@ -57,7 +57,7 @@ public class Interests extends AppCompatActivity {
         ((MyApplication) this.getApplication()).addInterest(newInterest);
         syncInterests();
     }
-    public void removeInterest(View view, int index){
+    public void removeInterest(int index){
         ((MyApplication) this.getApplication()).removeInterest(index);
         syncInterests();
     }

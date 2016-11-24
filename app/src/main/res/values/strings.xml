@@ -15,4 +15,13 @@
     <string name="add_interest_field_hint">Type an interest here.</string>
     <string name="remove_interest_button_label">Remove</string>
     <string name="default_interest_text">--</string>
+    <string name="back_button_label">Back</string>
+    <string name="select_project_button_label">More info</string>
+    <string name="start_navigating_button">Navigate</string>
+    <string name="join_button">Join</string>
+    <string name="exit_project_button_label">Leave</string>
+    <string name="finish_project_button_label">Done</string>
+    <string name="leave_finished_project_button_label">Finish</string>
+    <string name="finalize_project_button_label">Finalize</string>
+    <string name="begin_project_button_label">Begin</string>
 </resources>
