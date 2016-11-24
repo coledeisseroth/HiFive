@@ -24,4 +24,14 @@
     <string name="leave_finished_project_button_label">Finish</string>
     <string name="finalize_project_button_label">Finalize</string>
     <string name="begin_project_button_label">Begin</string>
+
+    <string name="project_title_0">FOIL the government\'s brain-control conspiracy!</string>
+    <string name="project_title_1">Eskimo Hentai Addicts Meeting</string>
+    <string name="project_title_2">Carpool to the furry convention</string>
+    <string name="project_title_3">Make my cat sing</string>
+    <string name="project_title_4">Snotty airline flight attendants wanted</string>
+    <string name="project_title_5">Summoning a demon</string>
+    <string name="project_title_6">Discreet brony-to-brony discussion</string>
+
+
 </resources>
