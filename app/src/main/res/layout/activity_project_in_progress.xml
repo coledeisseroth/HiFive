@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_project_in_progress"
     android:layout_width="match_parent"
@@ -27,4 +28,121 @@
         android:layout_alignParentEnd="true"
         android:id="@+id/done_button"
         android:onClick="goToProjectComplete"/>
+
+    <TextView
+        android:text="@string/project_in_progress_screen_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/title" />
+
+    <ImageView
+        app:srcCompat="@mipmap/Harkinian"
+        android:id="@+id/participant_0_picture"
+        android:layout_below="@+id/title"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/participant_0_rating"
+        android:layout_alignBottom="@+id/participant_0_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ganon"
+        android:layout_below="@+id/participant_0_picture"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/participant_1_picture"
+        android:layout_alignBottom="@+id/participant_1_rating"
+        android:layout_toEndOf="@+id/participant_0_rating" />
+
+    <TextView
+        android:text="@string/participant_0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/participant_0_name"
+        android:layout_below="@+id/title"
+        android:layout_alignParentStart="true" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/participant_0_rating"
+        android:layout_below="@+id/participant_0_name"
+        android:layout_alignParentStart="true"
+        android:numStars="5"
+        android:rating="5" />
+
+    <TextView
+        android:text="@string/participant_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/participant_1_name"
+        android:layout_below="@+id/participant_0_rating"
+        android:layout_alignParentStart="true" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/participant_1_rating"
+        android:layout_below="@+id/participant_1_name"
+        android:layout_alignParentStart="true"
+        android:numStars="5"
+        android:rating="1" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/participant_2_name"
+        android:layout_alignParentStart="true"
+        android:id="@+id/participant_2_rating"
+        android:numStars="5"
+        android:rating="3" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/Servo"
+        android:layout_below="@+id/participant_1_picture"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/participant_2_picture"
+        android:layout_alignBottom="@+id/participant_2_rating"
+        android:layout_toEndOf="@+id/participant_1_rating" />
+
+    <TextView
+        android:text="@string/participant_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/participant_2_name"
+        android:layout_below="@+id/participant_1_picture"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/participant_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/participant_2_rating"
+        android:layout_alignParentStart="true"
+        android:id="@+id/participant_3_name" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/participant_3_name"
+        android:layout_alignParentStart="true"
+        android:id="@+id/participant_3_rating"
+        android:numStars="5"
+        android:rating="4" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/Freddi"
+        android:id="@+id/participant_3_picture"
+        android:layout_alignBottom="@+id/participant_3_rating"
+        android:layout_below="@+id/participant_2_picture"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/participant_3_rating" />
+
 </RelativeLayout>
