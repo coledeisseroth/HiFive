@@ -38,7 +38,7 @@
         android:id="@+id/title" />
 
     <ImageView
-        app:srcCompat="@mipmap/Harkinian"
+        app:srcCompat="@mipmap/harkinian"
         android:id="@+id/participant_0_picture"
         android:layout_below="@+id/title"
         android:layout_alignParentEnd="true"
@@ -72,7 +72,8 @@
         android:layout_below="@+id/participant_0_name"
         android:layout_alignParentStart="true"
         android:numStars="5"
-        android:rating="5" />
+        android:rating="3"
+        android:clickable="false"/>
 
     <TextView
         android:text="@string/participant_1"
@@ -89,7 +90,8 @@
         android:layout_below="@+id/participant_1_name"
         android:layout_alignParentStart="true"
         android:numStars="5"
-        android:rating="1" />
+        android:rating="1"
+        android:clickable="false"/>
 
     <RatingBar
         android:layout_width="wrap_content"
@@ -98,12 +100,13 @@
         android:layout_alignParentStart="true"
         android:id="@+id/participant_2_rating"
         android:numStars="5"
-        android:rating="3" />
+        android:rating="5"
+        android:clickable="false"/>
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@mipmap/Servo"
+        app:srcCompat="@mipmap/servo"
         android:layout_below="@+id/participant_1_picture"
         android:layout_alignParentEnd="true"
         android:id="@+id/participant_2_picture"
@@ -133,12 +136,13 @@
         android:layout_alignParentStart="true"
         android:id="@+id/participant_3_rating"
         android:numStars="5"
-        android:rating="4" />
+        android:rating="4"
+        android:clickable="false" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@mipmap/Freddi"
+        app:srcCompat="@mipmap/freddi"
         android:id="@+id/participant_3_picture"
         android:layout_alignBottom="@+id/participant_3_rating"
         android:layout_below="@+id/participant_2_picture"
