@@ -31,6 +31,12 @@
     <string name="participant_2">Tom Servo</string>
     <string name="participant_3">Freddi Fish</string>
 
+    <string name="waiting_for_participants_screen_title">Waiting for Participants</string>
+    <string name="participant_0_status">Joined</string>
+    <string name="participant_1_status">Joined</string>
+    <string name="participant_2_status">500m</string>
+    <string name="participant_3_status">2km</string>
+
 
 
 
