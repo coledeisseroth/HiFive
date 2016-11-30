@@ -37,7 +37,10 @@
     <string name="participant_2_status">500m</string>
     <string name="participant_3_status">2km</string>
 
+    <string name="join_project_screen_title">Join this project?</string>
 
+    <string name="finish_waiting_button_label">Prototype: I waited</string>
+    <string name="finish_navigating_button_label">Prototype: I navigated</string>
 
 
 </resources>

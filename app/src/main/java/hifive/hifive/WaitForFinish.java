@@ -5,19 +5,19 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class ProjectInProgress extends AppCompatActivity {
+public class WaitForFinish extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_project_in_progress);
+        setContentView(R.layout.activity_wait_for_finish);
     }
-    public void goToMain(View view){
-        Intent intent = new Intent(this, MainActivity.class);
+    public void goToProjectComplete(View view) {
+        Intent intent = new Intent(this, ProjectComplete.class);
         startActivity(intent);
     }
-    public void goToWaitForFinish(View view){
-        Intent intent = new Intent(this, WaitForFinish.class);
+    public void goToMain(View view) {
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 }

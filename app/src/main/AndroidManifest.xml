@@ -33,7 +33,10 @@
         <activity android:name=".JoinProject" />
         <activity android:name=".ProjectInProgress" />
         <activity android:name=".ProjectComplete" />
-        <activity android:name=".WaitForParticipants"></activity>
+        <activity android:name=".WaitForParticipants" />
+        <activity android:name=".Navigate" />
+        <activity android:name=".WaitForStart" />
+        <activity android:name=".WaitForFinish"></activity>
     </application>
 
 </manifest>

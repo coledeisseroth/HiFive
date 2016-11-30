@@ -27,7 +27,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:id="@+id/done_button"
-        android:onClick="goToProjectComplete"/>
+        android:onClick="goToWaitForFinish"/>
 
     <TextView
         android:text="@string/project_in_progress_screen_title"

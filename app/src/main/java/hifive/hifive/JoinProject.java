@@ -16,8 +16,8 @@ public class JoinProject extends AppCompatActivity {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
-    public void goToInProgress(View view){
-        Intent intent = new Intent(this, ProjectInProgress.class);
+    public void goToWaitForStart(View view){
+        Intent intent = new Intent(this, WaitForStart.class);
         startActivity(intent);
     }
 }
