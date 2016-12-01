@@ -47,5 +47,9 @@
 
     <string name="project_complete_screen_title">Project complete! Rate the others.</string>
 
+    <string name="set_location_screen_title">Project gathering point set to your current location.</string>
+
+    <string name="navigate_screen_title">Navigating</string>
+
 
 </resources>

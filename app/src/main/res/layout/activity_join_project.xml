@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_join_project"
     android:layout_width="match_parent"
@@ -27,5 +28,129 @@
         android:layout_alignParentEnd="true"
         android:id="@+id/join_button"
         android:onClick="goToWaitForStart"/>
+
+    <TextView
+        android:text="@string/join_project_screen_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/title_jp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_jp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/project_title_jp" />
+
+    <TextView
+        android:text="@string/participant_0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/project_title_jp"
+        android:layout_alignParentStart="true"
+        android:id="@+id/participant_0_name_jp" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/participant_0_rating_jp"
+        android:layout_below="@+id/participant_0_name_jp"
+        android:layout_alignParentStart="true"
+        android:isIndicator="true"
+        android:rating="3" />
+
+    <TextView
+        android:text="@string/participant_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/participant_0_rating_jp"
+        android:layout_alignParentStart="true"
+        android:id="@+id/participant_1_name_jp" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/participant_1_name_jp"
+        android:layout_alignParentStart="true"
+        android:id="@+id/participant_1_rating_jp"
+        android:rating="1"
+        android:isIndicator="true" />
+
+    <TextView
+        android:text="@string/participant_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/participant_1_rating_jp"
+        android:layout_alignParentStart="true"
+        android:id="@+id/participant_2_name_jp" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/participant_2_name_jp"
+        android:layout_alignParentStart="true"
+        android:id="@+id/participant_2_rating_jp"
+        android:rating="5"
+        android:isIndicator="true" />
+
+    <TextView
+        android:text="@string/participant_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/participant_2_rating_jp"
+        android:layout_alignParentStart="true"
+        android:id="@+id/participant_3_name_jp" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/participant_3_name_jp"
+        android:layout_alignParentStart="true"
+        android:id="@+id/participant_3_rating_jp"
+        android:isIndicator="true"
+        android:rating="4" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/harkinian"
+        android:layout_below="@+id/project_title_jp"
+        android:id="@+id/participant_0_picture_jp"
+        android:layout_alignBottom="@+id/participant_0_rating_jp"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/participant_0_rating_jp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/servo"
+        android:layout_below="@+id/participant_1_rating_jp"
+        android:id="@+id/participant_2_picture_jp"
+        android:layout_alignBottom="@+id/participant_2_rating_jp"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/participant_1_rating_jp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/freddi"
+        android:layout_below="@+id/participant_2_rating_jp"
+        android:id="@+id/participant_3_picture_jp"
+        android:layout_alignBottom="@+id/participant_3_rating_jp"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/participant_2_rating_jp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ganon"
+        android:id="@+id/participant_1_picture_jp"
+        android:layout_below="@+id/participant_0_rating_jp"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/participant_2_picture_jp"
+        android:layout_toEndOf="@+id/participant_0_rating_jp" />
 
 </RelativeLayout>

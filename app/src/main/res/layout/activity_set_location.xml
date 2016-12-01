@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_set_location"
     android:layout_width="match_parent"
@@ -16,15 +17,33 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:id="@+id/back_button"
+        android:id="@+id/back_button_sl"
         android:onClick="goToCreateProject"/>
 
     <Button
         android:text="@string/finalize_project_button_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/back_button"
+        android:layout_alignTop="@+id/back_button_sl"
         android:layout_alignParentEnd="true"
-        android:id="@+id/finalize_button"
+        android:id="@+id/finalize_button_sl"
         android:onClick="goToWait"/>
+
+    <TextView
+        android:text="@string/set_location_screen_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/title_sl" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/navigation"
+        android:layout_below="@+id/title_sl"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/map_sl"
+        android:layout_above="@+id/back_button_sl"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>

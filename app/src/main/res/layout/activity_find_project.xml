@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:id="@+id/back_button"
+        android:id="@+id/back_button_sl"
         android:onClick="goToMain"/>
 
     <Button

@@ -12,15 +12,6 @@
     tools:context="hifive.hifive.Navigate">
 
     <Button
-        android:text="@string/cancel_start_project_button_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/cancel_button_wfp"
-        android:onClick="goToMain"/>
-
-    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -29,13 +20,31 @@
         android:text="@string/finish_navigating_button_label"
         android:onClick="goToJoinProject"/>
 
+    <Button
+        android:text="@string/cancel_start_project_button_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/cancel_button_nav"
+        android:onClick="goToMain"/>
+
+    <TextView
+        android:text="@string/navigate_screen_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/title_nav" />
+
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@mipmap/navigation"
-        android:layout_alignParentTop="true"
+        android:layout_below="@+id/title_nav"
         android:layout_alignParentEnd="true"
-        android:id="@+id/map"
-        android:layout_above="@+id/cancel_button_wfp"
+        android:id="@+id/map_nav"
+        android:layout_above="@+id/done_navigating_button"
         android:layout_alignParentStart="true" />
+
 </RelativeLayout>
