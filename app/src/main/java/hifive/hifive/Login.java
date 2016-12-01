@@ -33,18 +33,18 @@ public class Login extends AppCompatActivity {
         btSignin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (etUsername.getText().toString().equals("CNL")) {
-                    if (etPassword.getText().toString().equals("cs147")) {
+//                if (etUsername.getText().toString().equals("CNL")) {
+//                    if (etPassword.getText().toString().equals("cs147")) {
                         Intent btSigninIntent = new Intent(Login.this, MainActivity.class);
                         Login.this.startActivity(btSigninIntent);
-                    } else {
-                        TextView tvPasswordHint = (TextView) findViewById(R.id.tvPasswordHint);
-                        tvPasswordHint.setText("Username and password don't match!");
-                    }
-                }else {
-                    TextView tvUsernameHint = (TextView) findViewById(R.id.tvUsernameHint);
-                    tvUsernameHint.setText("Invalid Username!");
-                }
+//                    } else {
+//                        TextView tvPasswordHint = (TextView) findViewById(R.id.tvPasswordHint);
+//                        tvPasswordHint.setText("Username and password don't match!");
+//                    }
+//                }else {
+//                    TextView tvUsernameHint = (TextView) findViewById(R.id.tvUsernameHint);
+//                    tvUsernameHint.setText("Invalid Username!");
+//                }
             }
         });
     }

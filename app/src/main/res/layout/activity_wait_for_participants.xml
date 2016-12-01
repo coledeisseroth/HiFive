@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:id="@+id/cancel_button"
+        android:id="@+id/cancel_button_wfp"
         android:onClick="goToMain"/>
 
     <Button
@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
-        android:id="@+id/start_project_button"
+        android:id="@+id/start_project_button_wfp"
         android:onClick="goToProjectInProgress"/>
 
     <TextView
@@ -35,149 +35,146 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:id="@+id/title" />
-
-    <RatingBar
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/participant_3_rating"
-        android:layout_below="@+id/participant_3_name"
-        android:layout_alignParentStart="true"
-        android:rating="4"
-        android:clickable="false"
-        android:isIndicator="true"/>
-
-    <TextView
-        android:text="@string/participant_2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/participant_2_name"
-        android:layout_below="@+id/participant_1_rating"
-        android:layout_alignParentStart="true" />
-
-    <RatingBar
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/participant_2_rating"
-        android:layout_below="@+id/participant_2_name"
-        android:layout_alignParentStart="true"
-        android:rating="5"
-        android:clickable="false"
-        android:isIndicator="true"/>
-
-    <RatingBar
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/participant_1_rating"
-        android:layout_below="@+id/participant_1_name"
-        android:layout_alignParentStart="true"
-        android:rating="1"
-        android:clickable="false"
-        android:isIndicator="true"/>
-
-    <TextView
-        android:text="@string/participant_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/participant_1_name"
-        android:layout_below="@+id/participant_0_rating"
-        android:layout_alignParentStart="true" />
-
-    <RatingBar
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/participant_0_rating"
-        android:layout_below="@+id/participant_0_name"
-        android:layout_alignParentStart="true"
-        android:rating="3"
-        android:clickable="false"
-        android:isIndicator="true"/>
+        android:id="@+id/title_wfp" />
 
     <TextView
         android:text="@string/participant_0"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/participant_0_name"
-        android:layout_below="@+id/title"
-        android:layout_alignParentStart="true" />
+        android:layout_below="@+id/title_wfp"
+        android:layout_alignParentStart="true"
+        android:id="@+id/participant_0_name_wfp" />
 
-    <TextView
-        android:text="@string/participant_2_status"
+    <RatingBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/participant_1_rating"
-        android:layout_alignStart="@+id/participant_1_status"
-        android:id="@+id/participant_2_status" />
+        android:layout_below="@+id/participant_0_name_wfp"
+        android:layout_alignParentStart="true"
+        android:id="@+id/participant_0_rating_wfp"
+        android:rating="3"
+        android:isIndicator="true" />
 
     <TextView
-        android:text="@string/participant_3_status"
+        android:text="@string/participant_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/participant_3_status"
-        android:layout_below="@+id/participant_2_rating"
-        android:layout_alignStart="@+id/participant_2_status" />
+        android:layout_below="@+id/participant_0_rating_wfp"
+        android:layout_alignParentStart="true"
+        android:id="@+id/participant_1_name_wfp" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/participant_1_name_wfp"
+        android:layout_alignParentStart="true"
+        android:id="@+id/participant_1_rating_wfp"
+        android:rating="1"
+        android:isIndicator="true" />
 
     <TextView
-        android:text="@string/participant_1_status"
+        android:text="@string/participant_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/participant_1_status"
-        android:layout_below="@+id/participant_0_rating"
-        android:layout_alignEnd="@+id/participant_1_rating" />
+        android:layout_below="@+id/participant_1_rating_wfp"
+        android:layout_alignParentStart="true"
+        android:id="@+id/participant_2_name_wfp" />
 
-    <TextView
-        android:text="@string/participant_0_status"
+    <RatingBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/participant_0_status"
-        android:layout_below="@+id/title"
-        android:layout_alignEnd="@+id/participant_0_rating" />
+        android:layout_below="@+id/participant_2_name_wfp"
+        android:layout_alignEnd="@+id/participant_1_rating_wfp"
+        android:id="@+id/participant_2_rating_wfp"
+        android:rating="5"
+        android:isIndicator="true" />
 
     <TextView
         android:text="@string/participant_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/participant_3_name"
-        android:layout_below="@+id/participant_2_rating"
-        android:layout_alignParentStart="true" />
+        android:layout_below="@+id/participant_2_rating_wfp"
+        android:layout_alignParentStart="true"
+        android:id="@+id/participant_3_name_wfp" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/participant_3_name_wfp"
+        android:layout_alignParentStart="true"
+        android:id="@+id/participant_3_rating_wfp"
+        android:rating="4"
+        android:isIndicator="true" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@mipmap/harkinian"
-        android:layout_below="@+id/title"
-        android:id="@+id/participant_0_picture"
-        android:layout_above="@+id/participant_1_status"
+        android:layout_below="@+id/title_wfp"
         android:layout_alignParentEnd="true"
-        android:layout_toEndOf="@+id/participant_0_rating" />
+        android:id="@+id/participant_0_picture_wfp"
+        android:layout_alignBottom="@+id/participant_0_rating_wfp"
+        android:layout_toEndOf="@+id/participant_0_rating_wfp" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@mipmap/ganon"
-        android:layout_below="@+id/participant_0_rating"
-        android:id="@+id/participant_1_picture"
-        android:layout_above="@+id/participant_2_status"
+        android:layout_below="@+id/participant_0_picture_wfp"
         android:layout_alignParentEnd="true"
-        android:layout_toEndOf="@+id/participant_1_rating" />
+        android:id="@+id/participant_1_picture_wfp"
+        android:layout_alignBottom="@+id/participant_1_rating_wfp"
+        android:layout_toEndOf="@+id/participant_0_rating_wfp" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@mipmap/servo"
-        android:layout_below="@+id/participant_1_picture"
-        android:id="@+id/participant_2_picture"
-        android:layout_above="@+id/participant_3_status"
+        android:layout_below="@+id/participant_1_picture_wfp"
         android:layout_alignParentEnd="true"
-        android:layout_toEndOf="@+id/participant_2_rating" />
+        android:id="@+id/participant_2_picture_wfp"
+        android:layout_alignBottom="@+id/participant_2_rating_wfp"
+        android:layout_toEndOf="@+id/participant_1_rating_wfp" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@mipmap/freddi"
-        android:layout_below="@+id/participant_2_rating"
-        android:id="@+id/participant_3_picture"
-        android:layout_alignBottom="@+id/participant_3_rating"
+        android:layout_below="@+id/participant_2_picture_wfp"
         android:layout_alignParentEnd="true"
-        android:layout_toEndOf="@+id/title" />
+        android:id="@+id/participant_3_picture_wfp"
+        android:layout_alignBottom="@+id/participant_3_rating_wfp"
+        android:layout_toEndOf="@+id/participant_2_rating_wfp" />
+
+    <TextView
+        android:text="@string/participant_0_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/participant_0_status_wfp"
+        android:layout_below="@+id/title_wfp"
+        android:layout_toStartOf="@+id/participant_0_picture_wfp" />
+
+    <TextView
+        android:text="@string/participant_1_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/participant_1_status_wfp"
+        android:layout_below="@+id/participant_0_rating_wfp"
+        android:layout_toStartOf="@+id/participant_0_picture_wfp" />
+
+    <TextView
+        android:text="@string/participant_2_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/participant_2_status_wfp"
+        android:layout_below="@+id/participant_1_rating_wfp"
+        android:layout_toStartOf="@+id/participant_1_picture_wfp" />
+
+    <TextView
+        android:text="@string/participant_3_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/participant_3_status_wfp"
+        android:layout_below="@+id/participant_2_rating_wfp"
+        android:layout_toStartOf="@+id/participant_2_picture_wfp" />
+
 </RelativeLayout>

@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:id="@+id/exit_button"
+        android:id="@+id/exit_button_pip"
         android:onClick="goToMain"/>
 
     <Button
@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
-        android:id="@+id/done_button"
+        android:id="@+id/done_button_pip"
         android:onClick="goToWaitForFinish"/>
 
     <TextView
@@ -35,15 +35,15 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:id="@+id/title" />
+        android:id="@+id/title_pip" />
 
     <ImageView
         app:srcCompat="@mipmap/harkinian"
-        android:id="@+id/participant_0_picture"
-        android:layout_below="@+id/title"
+        android:id="@+id/participant_0_picture_pip"
+        android:layout_below="@+id/title_pip"
         android:layout_alignParentEnd="true"
-        android:layout_toEndOf="@+id/participant_0_rating"
-        android:layout_alignBottom="@+id/participant_0_rating"
+        android:layout_toEndOf="@+id/participant_0_rating_pip"
+        android:layout_alignBottom="@+id/participant_0_rating_pip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
@@ -51,25 +51,25 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@mipmap/ganon"
-        android:layout_below="@+id/participant_0_picture"
+        android:layout_below="@+id/participant_0_picture_pip"
         android:layout_alignParentEnd="true"
-        android:id="@+id/participant_1_picture"
-        android:layout_alignBottom="@+id/participant_1_rating"
-        android:layout_toEndOf="@+id/participant_0_rating" />
+        android:id="@+id/participant_1_picture_pip"
+        android:layout_alignBottom="@+id/participant_1_rating_pip"
+        android:layout_toEndOf="@+id/participant_0_rating_pip" />
 
     <TextView
         android:text="@string/participant_0"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/participant_0_name"
-        android:layout_below="@+id/title"
+        android:id="@+id/participant_0_name_pip"
+        android:layout_below="@+id/title_pip"
         android:layout_alignParentStart="true" />
 
     <RatingBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/participant_0_rating"
-        android:layout_below="@+id/participant_0_name"
+        android:id="@+id/participant_0_rating_pip"
+        android:layout_below="@+id/participant_0_name_pip"
         android:layout_alignParentStart="true"
         android:numStars="5"
         android:rating="3"
@@ -80,15 +80,15 @@
         android:text="@string/participant_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/participant_1_name"
-        android:layout_below="@+id/participant_0_rating"
+        android:id="@+id/participant_1_name_pip"
+        android:layout_below="@+id/participant_0_rating_pip"
         android:layout_alignParentStart="true" />
 
     <RatingBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/participant_1_rating"
-        android:layout_below="@+id/participant_1_name"
+        android:id="@+id/participant_1_rating_pip"
+        android:layout_below="@+id/participant_1_name_pip"
         android:layout_alignParentStart="true"
         android:numStars="5"
         android:rating="1"
@@ -98,9 +98,9 @@
     <RatingBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/participant_2_name"
+        android:layout_below="@+id/participant_2_name_pip"
         android:layout_alignParentStart="true"
-        android:id="@+id/participant_2_rating"
+        android:id="@+id/participant_2_rating_pip"
         android:numStars="5"
         android:rating="5"
         android:clickable="false"
@@ -110,34 +110,34 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@mipmap/servo"
-        android:layout_below="@+id/participant_1_picture"
+        android:layout_below="@+id/participant_1_picture_pip"
         android:layout_alignParentEnd="true"
-        android:id="@+id/participant_2_picture"
-        android:layout_alignBottom="@+id/participant_2_rating"
-        android:layout_toEndOf="@+id/participant_1_rating" />
+        android:id="@+id/participant_2_picture_pip"
+        android:layout_alignBottom="@+id/participant_2_rating_pip"
+        android:layout_toEndOf="@+id/participant_1_rating_pip" />
 
     <TextView
         android:text="@string/participant_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/participant_2_name"
-        android:layout_below="@+id/participant_1_picture"
+        android:id="@+id/participant_2_name_pip"
+        android:layout_below="@+id/participant_1_picture_pip"
         android:layout_alignParentStart="true" />
 
     <TextView
         android:text="@string/participant_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/participant_2_rating"
+        android:layout_below="@+id/participant_2_rating_pip"
         android:layout_alignParentStart="true"
-        android:id="@+id/participant_3_name" />
+        android:id="@+id/participant_3_name_pip" />
 
     <RatingBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/participant_3_name"
+        android:layout_below="@+id/participant_3_name_pip"
         android:layout_alignParentStart="true"
-        android:id="@+id/participant_3_rating"
+        android:id="@+id/participant_3_rating_pip"
         android:numStars="5"
         android:rating="4"
         android:clickable="false"
@@ -147,10 +147,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@mipmap/freddi"
-        android:id="@+id/participant_3_picture"
-        android:layout_alignBottom="@+id/participant_3_rating"
-        android:layout_below="@+id/participant_2_picture"
+        android:id="@+id/participant_3_picture_pip"
+        android:layout_alignBottom="@+id/participant_3_rating_pip"
+        android:layout_below="@+id/participant_2_picture_pip"
         android:layout_alignParentEnd="true"
-        android:layout_toEndOf="@+id/participant_3_rating" />
+        android:layout_toEndOf="@+id/participant_3_rating_pip" />
 
 </RelativeLayout>
