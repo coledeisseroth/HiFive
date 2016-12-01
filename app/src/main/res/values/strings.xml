@@ -42,5 +42,10 @@
     <string name="finish_waiting_button_label">Prototype: I waited</string>
     <string name="finish_navigating_button_label">Prototype: I navigated</string>
 
+    <string name="waiting_for_start_screen_title">Waiting for the project to begin</string>
+    <string name="waiting_for_finish_screen_title">Waiting for the everybody else to finish</string>
+
+    <string name="project_complete_screen_title">Project complete! Rate the others.</string>
+
 
 </resources>
