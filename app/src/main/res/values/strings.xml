@@ -25,6 +25,9 @@
     <string name="finalize_project_button_label">Finalize</string>
     <string name="begin_project_button_label">Begin</string>
 
+    <string name="go_to_participant_list_button_label">Participants</string>
+
+
     <string name="project_in_progress_screen_title">Project in progress</string>
     <string name="participant_0">King Harkinian</string>
     <string name="participant_1">Ganon</string>
@@ -50,6 +53,11 @@
     <string name="set_location_screen_title">Project gathering point set to your current location.</string>
 
     <string name="navigate_screen_title">Navigating</string>
+
+    <string name="participant_list_screen_title">Current participants:</string>
+    <string name="exit_participant_list_button_label">Back to description</string>
+
+    <string name="confirm_exit_title">Are you sure you want to quit?</string>
 
 
 </resources>

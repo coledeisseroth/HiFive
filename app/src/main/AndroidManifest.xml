@@ -35,13 +35,12 @@
         <activity android:name=".ProjectComplete" />
         <activity android:name=".WaitForParticipants" />
         <activity android:name=".Navigate" />
-
         <activity android:name=".WaitForStart" />
         <activity android:name=".WaitForFinish" />
-
         <activity android:name=".MainActivity" />
-        <activity android:name=".Register">
-        </activity>
+        <activity android:name=".Register" />
+        <activity android:name=".ParticipantList" />
+        <activity android:name=".ConfirmExit"></activity>
     </application>
 
 </manifest>

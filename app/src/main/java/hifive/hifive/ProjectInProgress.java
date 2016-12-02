@@ -13,7 +13,7 @@ public class ProjectInProgress extends AppCompatActivity {
         setContentView(R.layout.activity_project_in_progress);
     }
     public void goToMain(View view){
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, ConfirmExit.class);
         startActivity(intent);
     }
     public void goToWaitForFinish(View view){

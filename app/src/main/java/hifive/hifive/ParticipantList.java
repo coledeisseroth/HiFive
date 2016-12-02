@@ -5,15 +5,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class ProjectComplete extends AppCompatActivity {
+public class ParticipantList extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_project_complete);
+        setContentView(R.layout.activity_participant_list);
     }
-    public void goToMain(View view){
-        Intent intent = new Intent(this, ConfirmExit.class);
+
+    public void goToProjectDescription(View view){
+        Intent intent = new Intent(this, ProjectDescription.class);
         startActivity(intent);
     }
 }

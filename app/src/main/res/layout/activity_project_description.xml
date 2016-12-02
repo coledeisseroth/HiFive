@@ -11,15 +11,6 @@
     tools:context="hifive.hifive.ProjectDescription">
 
     <Button
-        android:text="@string/back_button_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/back_button_sl"
-        android:onClick="goToFindProject"/>
-
-    <Button
         android:text="@string/start_navigating_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -44,4 +35,22 @@
         android:layout_alignParentStart="true"
         android:id="@+id/project_description"
         android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="@string/go_to_participant_list_button_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/participants_button_pd"
+        android:onClick="goToParticipantList"/>
+
+    <Button
+        android:text="@string/back_button_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/back_button_pd"
+        android:onClick="goToFindProject" />
 </RelativeLayout>

@@ -18,7 +18,7 @@ public class JoinProject extends AppCompatActivity {
         projectTitle.setText(((MyApplication)this.getApplication()).getActiveProjectTitle());
     }
     public void goToMain(View view){
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, ConfirmExit.class);
         startActivity(intent);
     }
     public void goToWaitForStart(View view){

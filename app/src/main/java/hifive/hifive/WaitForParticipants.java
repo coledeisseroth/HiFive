@@ -13,7 +13,7 @@ public class WaitForParticipants extends AppCompatActivity {
         setContentView(R.layout.activity_wait_for_participants);
     }
     public void goToMain(View view){
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, ConfirmExit.class);
         startActivity(intent);
     }
     public void goToProjectInProgress(View view){

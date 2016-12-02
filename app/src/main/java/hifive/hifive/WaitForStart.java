@@ -17,7 +17,7 @@ public class WaitForStart extends AppCompatActivity {
         startActivity(intent);
     }
     public void goToMain(View view) {
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, ConfirmExit.class);
         startActivity(intent);
     }
 }

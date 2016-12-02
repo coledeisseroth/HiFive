@@ -5,19 +5,18 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class WaitForFinish extends AppCompatActivity {
+public class ConfirmExit extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_wait_for_finish);
-    }
-    public void goToProjectComplete(View view) {
-        Intent intent = new Intent(this, ProjectComplete.class);
-        startActivity(intent);
+        setContentView(R.layout.activity_confirm_exit);
     }
     public void goToMain(View view) {
-        Intent intent = new Intent(this, ConfirmExit.class);
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
+    }
+    public void resumeOnHold(View view){
+        finish();
     }
 }

@@ -27,7 +27,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
         android:id="@+id/cancel_button_nav"
-        android:onClick="goToMain"/>
+        android:onClick="suspend"/>
 
     <TextView
         android:text="@string/navigate_screen_title"
