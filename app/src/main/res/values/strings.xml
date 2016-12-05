@@ -59,5 +59,8 @@
 
     <string name="confirm_exit_title">Are you sure you want to quit?</string>
 
+    <string name="profile_title">Your profile</string>
+
+
 
 </resources>

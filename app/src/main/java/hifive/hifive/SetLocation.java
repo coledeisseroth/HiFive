@@ -17,6 +17,7 @@ public class SetLocation extends AppCompatActivity {
         startActivity(intent);
     }
     public void goToWait(View view){
+        ((MyApplication)this.getApplication()).removeCredit();
         Intent intent = new Intent(this, WaitForParticipants.class);
         startActivity(intent);
     }

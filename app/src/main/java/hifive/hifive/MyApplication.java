@@ -35,4 +35,8 @@ public class MyApplication extends Application {
     private String activeProjectDescription = "";
     public String getActiveProjectDescription(){return activeProjectDescription;}
     public void setActiveProjectDescription(String newDescription){activeProjectDescription = newDescription;}
+    private int credits = 0;
+    public void addCredit(){credits++;}
+    public int getCredits(){return credits;}
+    public void removeCredit(){credits--;}
 }

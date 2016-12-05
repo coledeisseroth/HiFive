@@ -13,6 +13,7 @@ public class WaitForFinish extends AppCompatActivity {
         setContentView(R.layout.activity_wait_for_finish);
     }
     public void goToProjectComplete(View view) {
+        ((MyApplication)this.getApplication()).addCredit();
         Intent intent = new Intent(this, ProjectComplete.class);
         startActivity(intent);
     }

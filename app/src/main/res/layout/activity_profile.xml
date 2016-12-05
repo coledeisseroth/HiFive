@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:id="@+id/button2"
+        android:id="@+id/return_to_main_p"
         android:onClick="goToMain" />
 
     <Button
@@ -25,6 +25,22 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
-        android:id="@+id/button3"
+        android:id="@+id/interests_p"
         android:onClick="goToInterests" />
+
+    <TextView
+        android:text="@string/profile_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/title_p" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_p"
+        android:layout_alignParentStart="true"
+        android:id="@+id/credits_p" />
 </RelativeLayout>

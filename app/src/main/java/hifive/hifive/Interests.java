@@ -38,8 +38,7 @@ public class Interests extends AppCompatActivity {
     }
 
     public void goToProfile(View view) {
-        Intent intent = new Intent(this, Profile.class);
-        startActivity(intent);
+        finish();
     }
     public void removeInterest0(View view){removeInterest(0);}
     public void removeInterest1(View view){removeInterest(1);}
