@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_wait_for_start"
     android:layout_width="match_parent"
@@ -36,4 +37,14 @@
         android:layout_alignParentStart="true"
         android:id="@+id/cancel_button_wfs"
         android:onClick="goToMain"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/loading"
+        android:layout_below="@+id/title_wfs"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/loading_wfs"
+        android:layout_above="@+id/start_button_wfs"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>
