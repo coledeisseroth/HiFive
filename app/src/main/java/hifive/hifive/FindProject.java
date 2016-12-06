@@ -46,7 +46,7 @@ public class FindProject extends AppCompatActivity {
 
     }
     public void goToMain(View view){
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, MapsActivity.class);
         startActivity(intent);
     }
     public void goToProjectDescription0(View view){
