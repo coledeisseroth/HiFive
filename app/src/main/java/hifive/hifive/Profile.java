@@ -18,9 +18,8 @@ public class Profile extends AppCompatActivity {
         credits.setText("Your credits: " + nCredits);
     }
 
-    public void goToMap(View view) {
-        Intent intent = new Intent(this, MapsActivity.class);
-        startActivity(intent);
+    public void goToMain(View view) {
+        finish();
     }
     public void goToInterests(View view) {
         Intent intent = new Intent(this, Interests.class);

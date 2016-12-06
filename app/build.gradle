@@ -25,9 +25,8 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     compile 'com.android.support:appcompat-v7:25.0.1'
-    compile 'com.google.android.gms:play-services-maps:6.5.87'
-    compile 'com.android.support:design:25.0.1'
-    compile 'com.google.android.gms:play-services-appindexing:9.6.0'
-    compile 'com.google.android.gms:play-services:9.6.0'
     testCompile 'junit:junit:4.12'
+    compile 'com.google.android.gms:play-services-maps:9.8.0'
+    compile 'com.android.support:design:25.0.1'
+    compile 'com.google.android.gms:play-services-appindexing:9.8.0'
 }

@@ -13,7 +13,7 @@ public class ConfirmExit extends AppCompatActivity {
         setContentView(R.layout.activity_confirm_exit);
     }
     public void goToMain(View view) {
-        Intent intent = new Intent(this, MapsActivity.class);
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
     public void resumeOnHold(View view){
