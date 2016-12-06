@@ -25,7 +25,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:id="@+id/title_wfs" />
+        android:id="@+id/title_wfs"
+        android:textAppearance="@android:style/TextAppearance.Material.Large" />
 
     <Button
         android:text="@string/exit_project_button_label"

@@ -21,111 +21,108 @@
         android:onClick="goToMain"/>
 
     <TextView
-        android:text="@string/project_complete_screen_title"
+        android:text="@string/participant_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/title_pc" />
+        android:id="@+id/participant_3_name_pc"
+        android:layout_alignTop="@+id/imageView4"
+        android:layout_toEndOf="@+id/imageView4"
+        android:textAppearance="@android:style/TextAppearance.Material.Large" />
 
     <RatingBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/paricipant_0_name_pc"
-        android:layout_alignParentStart="true"
-        android:id="@+id/participant_0_rating_pc" />
-
-    <TextView
-        android:text="@string/participant_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/participant_0_rating_pc"
-        android:layout_alignParentStart="true"
-        android:id="@+id/participant_1_name_pc" />
-
-    <RatingBar
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/participant_1_name_pc"
-        android:layout_alignEnd="@+id/participant_0_rating_pc"
-        android:id="@+id/participant_1_rating_pc" />
+        android:id="@+id/participant_3_rating_pc"
+        android:layout_below="@+id/participant_3_name_pc"
+        android:layout_toEndOf="@+id/imageView4" />
 
     <TextView
         android:text="@string/participant_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/participant_1_rating_pc"
-        android:layout_alignParentStart="true"
-        android:id="@+id/participant_2_name_pc" />
+        android:id="@+id/participant_2_name_pc"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_alignEnd="@+id/participant_3_name_pc" />
 
     <RatingBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/participant_2_rating_pc"
         android:layout_below="@+id/participant_2_name_pc"
-        android:layout_alignEnd="@+id/participant_1_rating_pc"
-        android:id="@+id/participant_2_rating_pc" />
+        android:layout_toEndOf="@+id/imageView3" />
 
     <TextView
-        android:text="@string/participant_3"
+        android:text="@string/participant_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/participant_2_rating_pc"
-        android:layout_alignParentStart="true"
-        android:id="@+id/participant_3_name_pc" />
+        android:id="@+id/participant_1_name_pc"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_alignStart="@+id/participant_1_rating_pc"
+        android:textAppearance="@android:style/TextAppearance.Material.Large" />
 
     <RatingBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/participant_3_name_pc"
-        android:layout_alignParentStart="true"
-        android:id="@+id/participant_3_rating_pc" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@mipmap/harkinian"
-        android:layout_below="@+id/title_pc"
-        android:id="@+id/imageView"
-        android:layout_alignBottom="@+id/participant_0_rating_pc"
-        android:layout_alignParentEnd="true"
-        android:layout_toEndOf="@+id/participant_0_rating_pc" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@mipmap/ganon"
-        android:layout_below="@+id/participant_0_rating_pc"
-        android:id="@+id/imageView2"
-        android:layout_alignBottom="@+id/participant_1_rating_pc"
-        android:layout_alignParentEnd="true"
-        android:layout_toEndOf="@+id/participant_0_rating_pc" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@mipmap/servo"
-        android:layout_below="@+id/participant_1_rating_pc"
-        android:id="@+id/imageView3"
-        android:layout_alignBottom="@+id/participant_2_rating_pc"
-        android:layout_alignParentEnd="true"
-        android:layout_toEndOf="@+id/participant_1_rating_pc" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@mipmap/freddi"
-        android:layout_below="@+id/imageView3"
-        android:id="@+id/imageView4"
-        android:layout_alignBottom="@+id/participant_3_rating_pc"
-        android:layout_alignParentEnd="true"
-        android:layout_toEndOf="@+id/participant_2_rating_pc" />
+        android:id="@+id/participant_1_rating_pc"
+        android:layout_below="@+id/participant_1_name_pc"
+        android:layout_alignStart="@+id/participant_2_name_pc" />
 
     <TextView
         android:text="@string/participant_0"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/paricipant_0_name_pc"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView"
+        android:textAppearance="@android:style/TextAppearance.Material.Large" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/participant_0_rating_pc"
+        android:layout_below="@+id/paricipant_0_name_pc"
+        android:layout_toEndOf="@+id/imageView" />
+
+    <TextView
+        android:text="@string/project_complete_screen_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title_pc"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="@android:style/TextAppearance.Material.Large" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@mipmap/harkinian"
+        android:id="@+id/imageView"
         android:layout_below="@+id/title_pc"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@mipmap/ganon"
+        android:id="@+id/imageView2"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@mipmap/servo"
+        android:id="@+id/imageView3"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@mipmap/freddi"
+        android:id="@+id/imageView4"
+        android:layout_below="@+id/imageView3"
         android:layout_alignParentStart="true" />
 
 </RelativeLayout>
