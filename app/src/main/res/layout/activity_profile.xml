@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_profile"
     android:layout_width="match_parent"
@@ -43,4 +44,13 @@
         android:layout_below="@+id/title_p"
         android:layout_alignParentStart="true"
         android:id="@+id/credits_p" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:srcCompat="@mipmap/nigel"
+        android:layout_below="@+id/credits_p"
+        android:layout_alignParentStart="true"
+        android:id="@+id/user_picture_profile" />
+
 </RelativeLayout>
