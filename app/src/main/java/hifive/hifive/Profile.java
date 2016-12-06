@@ -18,13 +18,13 @@ public class Profile extends AppCompatActivity {
         credits.setText("Your credits: " + nCredits);
     }
 
-<<<<<<< HEAD
+
     public void goToMap(View view) {
         Intent intent = new Intent(this, MapsActivity.class);
-=======
+        startActivity(intent);
+    }
     public void goToMain(View view) {
         Intent intent = new Intent(this, MainActivity.class);
->>>>>>> origin/master
         startActivity(intent);
     }
     public void goToInterests(View view) {
