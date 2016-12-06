@@ -30,19 +30,19 @@ public class FindProject extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_find_project);
         TextView title0 = (TextView) findViewById(R.id.project_title_0);
-        title0.setText(projectTitle0);
+        title0.setText("(200m)" + projectTitle0);
         TextView title1 = (TextView) findViewById(R.id.project_title_1);
-        title1.setText(projectTitle1);
+        title1.setText("(500m)" + projectTitle1);
         TextView title2 = (TextView) findViewById(R.id.project_title_2);
-        title2.setText(projectTitle2);
+        title2.setText("(1km)" + projectTitle2);
         TextView title3 = (TextView) findViewById(R.id.project_title_3);
-        title3.setText(projectTitle3);
+        title3.setText("(1.5km)" + projectTitle3);
         TextView title4 = (TextView) findViewById(R.id.project_title_4);
-        title4.setText(projectTitle4);
+        title4.setText("(2km)" + projectTitle4);
         TextView title5 = (TextView) findViewById(R.id.project_title_5);
-        title5.setText(projectTitle5);
+        title5.setText("(3km)" + projectTitle5);
         TextView title6 = (TextView) findViewById(R.id.project_title_6);
-        title6.setText(projectTitle6);
+        title6.setText("(5km)" + projectTitle6);
 
     }
     public void goToMain(View view){

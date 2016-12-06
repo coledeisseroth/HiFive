@@ -15,7 +15,7 @@ public class JoinProject extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_join_project);
         TextView projectTitle = (TextView) findViewById(R.id.project_title_jp);
-        projectTitle.setText(((MyApplication)this.getApplication()).getActiveProjectTitle());
+        projectTitle.setText("Join project \"" + ((MyApplication)this.getApplication()).getActiveProjectTitle() + "\"?");
     }
     public void goToMain(View view){
         Intent intent = new Intent(this, ConfirmExit.class);

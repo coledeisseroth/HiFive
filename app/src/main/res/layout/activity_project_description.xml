@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_project_description"
     android:layout_width="match_parent"
@@ -25,7 +26,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/project_title"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textAppearance="@android:style/TextAppearance.Material.Large" />
 
     <TextView
         android:text="TextView"
@@ -34,7 +36,8 @@
         android:layout_below="@+id/project_title"
         android:layout_alignParentStart="true"
         android:id="@+id/project_description"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
 
     <Button
         android:text="@string/go_to_participant_list_button_label"
@@ -53,4 +56,38 @@
         android:layout_alignParentStart="true"
         android:id="@+id/back_button_pd"
         android:onClick="goToFindProject" />
+
+    <TextView
+        android:text="@string/participant_0_ratings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/host_name_pd"
+        android:layout_toEndOf="@+id/host_rating_pd"
+        android:id="@+id/host_num_ratings_pd" />
+
+    <ImageView
+        android:layout_width="100dp"
+        app:srcCompat="@mipmap/harkinian"
+        android:id="@+id/host_picture_pd"
+        android:layout_height="100dp"
+        android:layout_below="@+id/project_description"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/participant_0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/host_name_pd"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:layout_below="@+id/project_description"
+        android:layout_toEndOf="@+id/host_picture_pd" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/host_rating_pd"
+        style="@android:style/Widget.Material.RatingBar.Small"
+        android:rating="3"
+        android:layout_alignBottom="@+id/host_num_ratings_pd"
+        android:layout_toEndOf="@+id/host_picture_pd" />
 </RelativeLayout>

@@ -19,7 +19,8 @@ public class Profile extends AppCompatActivity {
     }
 
     public void goToMain(View view) {
-        finish();
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
     public void goToInterests(View view) {
         Intent intent = new Intent(this, Interests.class);
