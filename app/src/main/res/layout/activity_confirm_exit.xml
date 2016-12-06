@@ -16,23 +16,26 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:id="@+id/title_ce" />
-
-    <Button
-        android:text="No"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/no_button_ce"
-        android:layout_below="@+id/title_ce"
-        android:layout_toEndOf="@+id/title_ce"
-        android:onClick="resumeOnHold" />
+        android:id="@+id/title_ce"
+        android:textAppearance="@android:style/TextAppearance.Material.Large" />
 
     <Button
         android:text="Yes"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/yes_button_ce"
+        android:onClick="goToMain"
         android:layout_below="@+id/title_ce"
         android:layout_alignParentStart="true"
-        android:onClick="goToMain" />
+        android:layout_alignParentEnd="true"
+        android:layout_height="200dp" />
+
+    <Button
+        android:text="No"
+        android:layout_width="wrap_content"
+        android:id="@+id/no_button_ce"
+        android:onClick="resumeOnHold"
+        android:layout_below="@+id/yes_button_ce"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_height="200dp" />
 </RelativeLayout>
