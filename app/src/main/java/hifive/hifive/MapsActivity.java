@@ -24,7 +24,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         setContentView(R.layout.activity_maps);
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
-                .findFragmentById(R.id.map);
+                .findFragmentById(R.id.map_main);
         mapFragment.getMapAsync(this);
         TextView credits = (TextView)findViewById(R.id.credits_main);
         int nCredits = ((MyApplication)this.getApplication()).getCredits();

@@ -35,16 +35,18 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:id="@+id/title_nav" />
+        android:id="@+id/title_nav"
+        android:textAppearance="@android:style/TextAppearance.Material.Large" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@mipmap/navigation"
-        android:layout_below="@+id/title_nav"
-        android:layout_alignParentEnd="true"
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/map_nav"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="hifive.hifive.Navigate"
         android:layout_above="@+id/done_navigating_button"
-        android:layout_alignParentStart="true" />
+        android:layout_below="@+id/title_nav" />
 
 </RelativeLayout>
