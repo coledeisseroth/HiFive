@@ -7,6 +7,16 @@ android:layout_width="match_parent"
 android:layout_height="match_parent"
 tools:context="hifive.hifive.MainActivity">
 
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/toolbar2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
     <fragment xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:map="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
@@ -25,15 +35,6 @@ tools:context="hifive.hifive.MainActivity">
     android:id="@+id/textView"
     android:textAppearance="@android:style/TextAppearance.Material.Large" />
 
-<Button
-    android:text="@string/profile_button_label"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:id="@+id/main_to_profile_button"
-    android:onClick="goToProfile"
-    android:layout_alignParentBottom="true"
-    android:layout_alignParentStart="true" />
-
     <Button
     android:text="@string/start_project_button_label"
     android:layout_width="wrap_content"
@@ -41,7 +42,9 @@ tools:context="hifive.hifive.MainActivity">
     android:layout_alignTop="@+id/main_to_profile_button"
     android:layout_alignParentEnd="true"
     android:id="@+id/start_project_button_main"
-    android:onClick="goToCreateProject" />
+    android:onClick="goToCreateProject"
+        style="@android:style/Widget.DeviceDefault.Light.Button.Borderless"
+        android:fontFamily="sans-serif-medium" />
 
     <TextView
         android:text="TextView"
@@ -59,7 +62,19 @@ tools:context="hifive.hifive.MainActivity">
         android:id="@+id/button5"
         android:onClick="goToFindProject"
         android:layout_alignParentBottom="true"
-        android:layout_toStartOf="@+id/start_project_button_main" />
+        android:layout_toStartOf="@+id/start_project_button_main"
+        style="@android:style/Widget.DeviceDefault.Light.Button.Borderless" />
+
+    <Button
+        android:text="@string/profile_button_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_to_profile_button"
+        android:onClick="goToProfile"
+        style="@android:style/Widget.DeviceDefault.Button.Borderless"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:fontFamily="sans-serif-medium" />
 
 
 </RelativeLayout>
