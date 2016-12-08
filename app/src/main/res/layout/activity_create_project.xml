@@ -81,18 +81,8 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:id="@+id/continue_button"
-        android:onClick="goToSetLocation"/>
-
-    <Button
-        android:text="@string/add_interest_button_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/description_input"
-        android:layout_toEndOf="@+id/project_interest_input"
-        android:id="@+id/submit_project_interest_button"
-        android:layout_alignBottom="@+id/project_interest_input"
-        android:layout_alignStart="@+id/continue_button"
-        android:onClick="addProjectInterest"/>
+        android:onClick="goToSetLocation"
+        android:elevation="0dp" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -103,15 +93,6 @@
         android:id="@+id/project_interest_input"
         android:layout_below="@+id/desription_label"
         android:layout_toEndOf="@+id/desription_label" />
-
-    <Button
-        android:text="@string/remove_interest_button_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/submit_project_interest_button"
-        android:layout_alignStart="@+id/submit_project_interest_button"
-        android:id="@+id/remove_project_interest_button_0"
-        android:onClick="removeProjectInterest0"/>
 
     <Button
         android:text="@string/remove_interest_button_label"
@@ -193,6 +174,25 @@
         android:id="@+id/project_interest_4"
         android:layout_alignBottom="@+id/remove_project_interest_button_4"
         android:layout_alignEnd="@+id/project_interest_3" />
+
+    <Button
+        android:text="@string/remove_interest_button_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/remove_project_interest_button_0"
+        android:onClick="removeProjectInterest0"
+        android:layout_below="@+id/submit_project_interest_button"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="@string/add_interest_button_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/submit_project_interest_button"
+        android:onClick="addProjectInterest"
+        android:layout_alignBaseline="@+id/project_interest_input"
+        android:layout_alignBottom="@+id/project_interest_input"
+        android:layout_alignParentEnd="true" />
 
 
 </RelativeLayout>

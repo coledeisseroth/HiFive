@@ -10,32 +10,32 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="hifive.hifive.ConfirmExit">
 
-    <TextView
-        android:text="@string/confirm_exit_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/title_ce"
-        android:textAppearance="@android:style/TextAppearance.Material.Large" />
-
     <Button
         android:text="Yes"
         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:id="@+id/yes_button_ce"
         android:onClick="goToMain"
-        android:layout_below="@+id/title_ce"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_height="200dp" />
+        android:layout_marginBottom="32dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:text="No"
         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:id="@+id/no_button_ce"
         android:onClick="resumeOnHold"
-        android:layout_below="@+id/yes_button_ce"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_height="200dp" />
+        android:layout_alignBaseline="@+id/yes_button_ce"
+        android:layout_alignBottom="@+id/yes_button_ce"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="@string/confirm_exit_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title_ce"
+        android:layout_marginBottom="60dp"
+        android:layout_above="@+id/no_button_ce"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
