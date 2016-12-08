@@ -20,7 +20,7 @@ public class Register extends AppCompatActivity {
     }
     public void goToInterests(View view){
         String username = ((EditText)findViewById(R.id.etName)).getText().toString();
-        if(username == ""){username = "Nigel Thronberry";}
+        if(username.length() < 1){username = "Nigel Thornberry";}
         ((MyApplication)this.getApplication()).setUsername(username);
         Intent btSigninIntent = new Intent(this, Interests.class);
         this.startActivity(btSigninIntent);
