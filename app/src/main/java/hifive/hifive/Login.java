@@ -18,8 +18,6 @@ public class Login extends AppCompatActivity {
         final EditText etUsername = (EditText) findViewById(R.id.etUsername);
         final EditText etPassword = (EditText) findViewById(R.id.etPassword);
 
-        final Button btSignin = (Button) findViewById(R.id.btSignin);
-
         final TextView tvSignup = (TextView) findViewById(R.id.tvSignup);
 
         tvSignup.setOnClickListener(new View.OnClickListener() {
@@ -30,23 +28,12 @@ public class Login extends AppCompatActivity {
                 Login.this.startActivity(tvSigninIntent);
             }
         });
-
-        btSignin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-//                if (etUsername.getText().toString().equals("CNL")) {
-//                    if (etPassword.getText().toString().equals("cs147")) {
-                        Intent btSigninIntent = new Intent(Login.this, MapsActivity.class);
-                        Login.this.startActivity(btSigninIntent);
-//                    } else {
-//                        TextView tvPasswordHint = (TextView) findViewById(R.id.tvPasswordHint);
-//                        tvPasswordHint.setText("Username and password don't match!");
-//                    }
-//                }else {
-//                    TextView tvUsernameHint = (TextView) findViewById(R.id.tvUsernameHint);
-//                    tvUsernameHint.setText("Invalid Username!");
-//                }
-            }
-        });
+    }
+    public void goToMain(View view){
+        String username = ((EditText)findViewById(R.id.etUsername)).getText().toString();
+        if(username == ""){username = "Nigel Thronberry";}
+        ((MyApplication)this.getApplication()).setUsername(username);
+        Intent btSigninIntent = new Intent(Login.this, MapsActivity.class);
+        Login.this.startActivity(btSigninIntent);
     }
 }
