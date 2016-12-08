@@ -39,4 +39,7 @@ public class MyApplication extends Application {
     public void addCredit(){credits++;}
     public int getCredits(){return credits;}
     public void removeCredit(){credits--;}
+    private String username = "Nigel Thornberry";
+    public void setUsername(String newName){username = newName;}
+    public String getUsername(){return username;}
 }

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/activity_main"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="hifive.hifive.MainActivity">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map_main"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="hifive.hifive.MapsActivity"
+        android:layout_below="@+id/credits_main"
+        android:layout_above="@+id/button5" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Welcome to HiFive!"
+    android:id="@+id/textView"
+    android:textAppearance="@android:style/TextAppearance.Material.Large" />
+
+    <Button
+    android:text="@string/start_project_button_label"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignTop="@+id/main_to_profile_button"
+    android:layout_alignParentEnd="true"
+    android:id="@+id/start_project_button_main"
+    android:onClick="goToCreateProject"
+        android:fontFamily="sans-serif-medium" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/credits_main"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:textAppearance="@android:style/TextAppearance.Material.Large" />
+
+    <Button
+        android:text="@string/find_project_button_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button5"
+        android:onClick="goToFindProject"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/start_project_button_main" />
+
+    <Button
+        android:text="@string/profile_button_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_to_profile_button"
+        android:onClick="goToProfile"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:fontFamily="sans-serif-medium" />
+
+
+</RelativeLayout>

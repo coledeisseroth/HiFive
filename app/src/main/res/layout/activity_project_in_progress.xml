@@ -123,14 +123,6 @@
         style="@style/Widget.AppCompat.RatingBar.Small" />
 
     <ImageView
-        app:srcCompat="@mipmap/harkinian"
-        android:id="@+id/participant_0_picture_pip"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_below="@+id/title_pip"
-        android:layout_alignParentStart="true" />
-
-    <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
         app:srcCompat="@mipmap/ganon"
@@ -185,5 +177,22 @@
         android:layout_below="@+id/participant_3_name_pip"
         android:layout_toEndOf="@+id/participant_3_rating_pip"
         android:id="@+id/participant_3_num_ratings_pip" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_pip"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/project_title_pip"
+        android:textAppearance="@android:style/TextAppearance.Material.Large" />
+
+    <ImageView
+        app:srcCompat="@mipmap/harkinian"
+        android:id="@+id/participant_0_picture_pip"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/project_title_pip"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>

@@ -18,7 +18,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
         android:id="@+id/return_to_main_p"
-        android:onClick="goToMain" />
+        android:onClick="goToMap" />
 
     <Button
         android:text="Interests"
