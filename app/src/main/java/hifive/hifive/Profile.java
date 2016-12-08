@@ -16,6 +16,8 @@ public class Profile extends AppCompatActivity {
         TextView credits = (TextView)findViewById(R.id.credits_p);
         String nCredits = Integer.toString(((MyApplication)this.getApplication()).getCredits());
         credits.setText("Your credits: " + nCredits);
+        TextView username = (TextView)findViewById(R.id.user_name_profile);
+        username.setText(((MyApplication)this.getApplication()).getUsername());
     }
 
 

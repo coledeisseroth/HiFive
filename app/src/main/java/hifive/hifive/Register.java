@@ -17,15 +17,12 @@ public class Register extends AppCompatActivity {
         final EditText etUsername = (EditText) findViewById(R.id.etUsername);
         final EditText etEmail = (EditText) findViewById(R.id.etEmail);
         final EditText etPassword = (EditText) findViewById(R.id.etPassword);
-
-        final Button btSignup = (Button) findViewById(R.id.btSignup);
-
-        btSignup.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent btSignupIntent = new Intent(Register.this, Interests.class);
-                Register.this.startActivity(btSignupIntent);
-            }
-        });
+    }
+    public void goToInterests(View view){
+        String username = ((EditText)findViewById(R.id.etName)).getText().toString();
+        if(username == ""){username = "Nigel Thronberry";}
+        ((MyApplication)this.getApplication()).setUsername(username);
+        Intent btSigninIntent = new Intent(this, Interests.class);
+        this.startActivity(btSigninIntent);
     }
 }
