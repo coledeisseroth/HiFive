@@ -35,7 +35,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/title_ce"
-        android:layout_marginBottom="60dp"
-        android:layout_above="@+id/no_button_ce"
+        android:layout_marginBottom="47dp"
+        android:layout_above="@+id/yes_button_ce"
         android:layout_centerHorizontal="true" />
 </RelativeLayout>
