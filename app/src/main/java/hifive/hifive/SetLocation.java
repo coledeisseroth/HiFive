@@ -38,6 +38,8 @@ public class SetLocation extends AppCompatActivity implements OnMapReadyCallback
     }
     public void goToWait(View view){
         ((MyApplication)this.getApplication()).removeCredit();
+        ((MyApplication)this.getApplication()).setActiveProjectTitle(((MyApplication)this.getApplication()).getProjectTitle());
+        ((MyApplication)this.getApplication()).setActiveProjectDescription(((MyApplication)this.getApplication()).getProjectDescription());
         Intent intent = new Intent(this, WaitForParticipants.class);
         startActivity(intent);
     }
