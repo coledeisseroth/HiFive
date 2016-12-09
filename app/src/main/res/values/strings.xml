@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">HiFive</string>
     <string name="start_project_button_label">Start a project</string>
-    <string name="find_project_button_label">Find a project</string>
+    <string name="find_project_button_label">List View</string>
     <string name="cancel_start_project_button_label">Cancel</string>
     <string name="confirm_start_project_button_label">Continue</string>
     <string name="project_title_label">Title</string>
@@ -15,7 +15,7 @@
     <string name="add_interest_field_hint">Type an interest here.</string>
     <string name="remove_interest_button_label">Remove</string>
     <string name="default_interest_text">--</string>
-    <string name="back_button_label">Back</string>
+    <string name="back_button_label">Map View</string>
     <string name="select_project_button_label">More info</string>
     <string name="start_navigating_button">Navigate</string>
     <string name="join_button">Join</string>

@@ -86,43 +86,43 @@ public class MapsActivity extends FragmentActivity implements
                 .position(new LatLng(37.4236, -122.1643))
                 .title(projectTitle0)
                 .icon(BitmapDescriptorFactory
-                        .defaultMarker(BitmapDescriptorFactory.HUE_GREEN)));
+                        .defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
 
         event1 = googleMap.addMarker(new MarkerOptions()
                 .position(new LatLng(37.422, -122.1646))
                 .title(projectTitle1)
                 .icon(BitmapDescriptorFactory
-                        .defaultMarker(BitmapDescriptorFactory.HUE_GREEN)));
+                        .defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
 
         event2 = googleMap.addMarker(new MarkerOptions()
                 .position(new LatLng(37.4224, -122.1651))
                 .title(projectTitle2)
                 .icon(BitmapDescriptorFactory
-                        .defaultMarker(BitmapDescriptorFactory.HUE_GREEN)));
+                        .defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
 
         event3 = googleMap.addMarker(new MarkerOptions()
                 .position(new LatLng(37.4233, -122.1656))
                 .title(projectTitle3)
                 .icon(BitmapDescriptorFactory
-                        .defaultMarker(BitmapDescriptorFactory.HUE_GREEN)));
+                        .defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
 
         event4 = googleMap.addMarker(new MarkerOptions()
                 .position(new LatLng(37.4228, -122.168))
                 .title(projectTitle4)
                 .icon(BitmapDescriptorFactory
-                        .defaultMarker(BitmapDescriptorFactory.HUE_GREEN)));
+                        .defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
 
         event5 = googleMap.addMarker(new MarkerOptions()
                 .position(new LatLng(37.4231, -122.1667))
                 .title(projectTitle5)
                 .icon(BitmapDescriptorFactory
-                        .defaultMarker(BitmapDescriptorFactory.HUE_GREEN)));
+                        .defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
 
         event6 = googleMap.addMarker(new MarkerOptions()
                 .position(new LatLng(37.4221, -122.1658))
                 .title(projectTitle6)
                 .icon(BitmapDescriptorFactory
-                        .defaultMarker(BitmapDescriptorFactory.HUE_GREEN)));
+                        .defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
 
 
 
