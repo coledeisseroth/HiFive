@@ -14,7 +14,6 @@ public class ParticipantList extends AppCompatActivity {
     }
 
     public void goToProjectDescription(View view){
-        Intent intent = new Intent(this, ProjectDescription.class);
-        startActivity(intent);
+        finish();
     }
 }

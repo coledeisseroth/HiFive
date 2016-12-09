@@ -67,6 +67,7 @@ public class CreateProject extends AppCompatActivity {
         if(numProjectInterests() > 4){return;}
         EditText editText = (EditText) findViewById(R.id.project_interest_input);
         String newProjectInterest = editText.getText().toString();
+        editText.setText("");
         if(newProjectInterest.length() < 1){return;}
         ((MyApplication) this.getApplication()).addProjectInterest(newProjectInterest);
         syncProjectInterests();
