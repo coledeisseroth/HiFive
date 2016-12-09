@@ -19,8 +19,9 @@ public class ProjectDescription extends AppCompatActivity {
         description.setText(((MyApplication) this.getApplication()).getActiveProjectDescription());
     }
     public void goToFindProject(View view){
-        Intent intent = new Intent(this, FindProject.class);
-        startActivity(intent);
+        //Intent intent = new Intent(this, FindProject.class);
+        //startActivity(intent);
+        finish();
     }
     public void goToParticipantList(View view){
         Intent intent = new Intent(this, ParticipantList.class);
