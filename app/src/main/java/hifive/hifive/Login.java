@@ -31,7 +31,7 @@ public class Login extends AppCompatActivity {
     }
     public void goToMain(View view){
         String username = ((EditText)findViewById(R.id.etUsername)).getText().toString();
-        if(username == ""){username = "Nigel Thronberry";}
+        if(username.length() < 1){username = "Nigel Thornberry";}
         ((MyApplication)this.getApplication()).setUsername(username);
         Intent btSigninIntent = new Intent(Login.this, MapsActivity.class);
         Login.this.startActivity(btSigninIntent);
